@@ -1,0 +1,28 @@
+/* Main navbar */
+
+.navbar {
+  margin: 0;
+}
+.navbar-element {
+      box-shadow: 0px 1px 10px #8888885c;
+    display: flex;
+    padding: 20px 0 13px 0px;
+    justify-content: space-around;
+
+  h1 {
+  font-size: 30px;
+  margin: none;
+  }
+}
+
+.menu-list {
+  list-style: none;
+  li {
+    padding: 0 20px;
+    opacity: .7;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  display: flex;
+}
