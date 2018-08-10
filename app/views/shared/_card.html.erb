@@ -1,14 +1,15 @@
-<%= link_to cocktail_path(c) do%>
+<%= link_to cocktail_path(cocktail) do %>
   <div class="col-xs-12 col-sm-4">
-    <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://picsum.photos/200/200');">
+    <% url = cocktail.photo.blank? ? image_path("cocktail_placeholder.jpg") : cl_image_path(cocktail.photo, height: 300, width: 400) %>
+    <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= url %>')">
+
       <div class="card-description">
-        <h2><%= c.name.capitalize %></h2>
-        <p><% c.doses.each do |dose| %>
+        <h2><%= cocktail.name.capitalize %></h2>
+        <p><% cocktail.doses.each do |dose| %>
           <%= "#{dose.description} of #{dose.ingredient.name}" %>
           <% end %>
         </p>
       </div>
-    <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
     </div>
   </div>
 <% end  %>

@@ -3,7 +3,7 @@
 
   <h1> <%= @cocktail.name %></h1>
   <br>
-  <img src="https://picsum.photos/200/300" alt="">
+  <%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
   <%= link_to "Add a dose", new_cocktail_dose_path(@cocktail) %>
   <br>
   <div class="container">

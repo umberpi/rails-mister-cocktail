@@ -5,16 +5,21 @@
 }
 .navbar {
   margin: 0;
+  background-image: url("https://www.metro.us/sites/default/files/styles/normal_article_breakpoints_theme_metrous_desktop_1x/public/main/articles/good-morning-vietnam.jpg");
+ background-size: cover;
+  background-repeat: no-repeat;  height: 400px;
+  color: white;
 }
 .navbar-element {
-      box-shadow: 0px 1px 10px #8888885c;
+    box-shadow: 0px 1px 10px #8888885c;
     display: flex;
     padding: 20px 0 13px 0px;
     justify-content: space-around;
 
   h1 {
-  font-size: 30px;
+  font-size: 50px;
   margin: none;
+
   }
 }
 

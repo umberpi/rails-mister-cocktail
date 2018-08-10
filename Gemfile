@@ -15,6 +15,10 @@ gem 'pg', '>= 0.18', '< 2.0'
 
 gem 'dotenv-rails', groups: [:development, :test]
 
+gem 'cloudinary'
+
+gem 'carrierwave', '~> 1.2'
+
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets

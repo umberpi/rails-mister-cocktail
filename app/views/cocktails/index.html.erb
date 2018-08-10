@@ -1,15 +1,12 @@
  <%= render "shared/banner" %>
  <div class="container text-center">
 
-      <div class="row">
-      <% @cocktails.each do |c| %>
-       <%= render "shared/card", c: c %>
-      <% end %>
+  <div class="row">
+    <% @cocktails.each do |cocktail| %>
+    <%= render "shared/card", cocktail: cocktail %>
+    <% end %>
+  </div>
+  <br>
+  <%= link_to "Add cocktails..", new_cocktail_path(@cocktail), class: "btn btn-primary"%>
 
-    </div>
-
-
-        <br>
-        <%= link_to "Add cocktails..", new_cocktail_path(@cocktail), class: "btn btn-primary"%>
-
-    </div>
+</div>
