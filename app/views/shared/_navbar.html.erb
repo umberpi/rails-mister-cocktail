@@ -1,14 +1,12 @@
 <div class="navbar">
-
   <div class="navbar-element">
-     <div class="logo">
-      <div>Goooood morning Cocktails</div>
-
-    </div>
     <ul class="menu-list">
       <li><%= link_to "home", root_path %></li>
-      <li>About</li>
-      <li>Add Cocktail</li>
+      <li><%= link_to "Add Cocktail", new_cocktail_path(@cocktail) %></li>
     </ul>
   </div>
 </div>
+
+
+<!--  <div class="logo"> -->
+<!-- </div> -->
